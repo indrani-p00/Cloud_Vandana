@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form id="surveyForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+ 
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+ 
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+ 
+        <label for="country">Country:</label>
+        <select id="country" required>
+            <option value="" disabled selected>Select Country</option>
+			<option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+        </select>
+ 
+        <label>Gender:</label>
+        <input type="checkbox" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+ 
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" required>
+ 
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+ 
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required>
+ 
+        <div class="buttons">
+            <button type="button" id="submitBtn">Submit</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </div>
+    </form>
+ 
+    <div id="popup" class="hidden">
+        <div id="popupContent">
+            <h2>Survey Form Submission</h2>
+            <ul>
+                <li><strong>First Name:</strong> <span id="popupFirstName"></span></li>
+                <li><strong>Last Name:</strong> <span id="popupLastName"></span></li>
+                <li><strong>Date of Birth:</strong> <span id="popupDob"></span></li>
+                <li><strong>Country:</strong> <span id="popupCountry"></span></li>
+                <li><strong>Gender:</strong> <span id="popupGender"></span></li>
+                <li><strong>Profession:</strong> <span id="popupProfession"></span></li>
+                <li><strong>Email:</strong> <span id="popupEmail"></span></li>
+                <li><strong>Mobile Number:</strong> <span id="popupMobile"></span></li>
+            </ul>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
